@@ -1,0 +1,22 @@
+h5{
+  color: #546A7B;
+}
+
+
+
+.btn {
+  background-color: #62929E;
+  color: rgb(237, 233, 233);
+  border-color: #344966;
+}
+
+.btn:hover {
+  background-color:#C6C5B9;
+  color: #393D3F;
+  border-color:rgba(45, 44, 44, 0.158);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}

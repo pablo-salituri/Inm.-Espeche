@@ -1,0 +1,60 @@
+.navSuperiorContainer {
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  top: 0;
+}
+
+.phone-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+  
+.phone-icon h5 {
+  margin-left: 5px;
+  size: 5%;
+}
+
+.iconsContainer {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+/* background-color: rgba(161, 161, 161, 0.205); */
+  /* background-color: #C6C5B9; */
+  background-color: rgb(241, 244, 247);
+}
+
+
+
+.social-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-nav li {
+  margin-left: 10px;
+}
+
+.phone-icon h5 {
+  margin-left: 5px;
+}
+
+
+.hover:hover{
+ transform: scale(1.2)
+}
+
+.phone-icon:hover {
+  transform: scale(1.2); /* Aumenta el tamaño del ícono en el hover */
+}
+

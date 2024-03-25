@@ -1,0 +1,23 @@
+.mobileFilterContainer {
+    height: 6vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.iconContainer {
+    background-color: #62929E;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon {
+    color: white;
+    width: 50%;
+    height: 50%;
+}

@@ -1,0 +1,124 @@
+.logout {
+    color: white;
+}
+
+.logout:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+    .navContainer {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        height: 75%;
+        padding: 0 80px;
+    }
+
+    .imageLink {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .image {
+        height: 75%;
+    }
+
+    .greater769Section {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .adminSection {
+        display: flex;
+        column-gap: 15px;
+    }
+
+    .options {
+        display: flex;
+        flex-direction: row;
+        column-gap: 15px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navContainer {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        height: 75%;
+        padding: 0 40px;
+    }
+
+    .imageLink {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .image {
+        height: 75%;
+    }
+
+    .greater769Section {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .adminSection {
+        display: flex;
+        column-gap: 15px;
+    }
+
+    .options {
+        display: flex;
+        flex-direction: row;
+        column-gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navContainer {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        height: 75%;
+    }
+
+    .imageLink {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .image {
+        height: 75%;
+    }
+
+    .menuBurgerButton {
+        background-color: #62929E;
+        color: rgb(237,233,233);
+        border-color: #344966;
+        width: 5.5vh;
+        aspect-ratio: 1/1;
+        border-radius: 10px;
+    }
+}

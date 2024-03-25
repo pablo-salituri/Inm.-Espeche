@@ -1,0 +1,30 @@
+.button-buscar {
+    background-color: white;
+    color: gray;
+  }
+  
+  .container-searchbar{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .button-buscar:hover{
+    background-color: rgba(255, 255, 255, 0.76);
+  }
+
+  /* .b {
+    width: 35%;
+  } */
+
+  @media (min-width: 1025px) {
+    .b {
+      width: 35%;
+    }
+  }
+
+/* @media (max-width: 768px) {
+  .b {
+    width: 100%;
+  }
+} */

@@ -1,0 +1,137 @@
+.createEditorContainer {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://d31dn7nfpuwjnm.cloudfront.net/images/valoraciones/0039/0739/fondos-inmobiliarios-que-como-funcionan.png?1595294746");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.createSectionOuter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5%;
+    text-align: center;
+    overflow-y: auto;
+    padding: 7%;
+}
+
+.menuBurgerButton {
+    background-color: #62929E;
+    color: rgb(237,233,233);
+    border-color: #344966;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 10px;
+}
+
+.icon {
+    height: 60%;
+}
+
+.createSectionInner {
+    width: 100%;
+    height: fit-content;
+    border-radius: 15px;
+    padding: 13px;
+    border: 2px solid #fff;
+}
+
+.formEdit {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén uno encima del otro */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    row-gap: 0.9vw;
+}
+
+.credentials {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.warning {
+    color: red;
+}
+
+
+
+.submit {
+    background-color: #0275d8;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 1vw;
+    padding: 1% 3%; 
+    margin-bottom: 10px;
+}
+
+@media (min-width: 769px) /* and (max-width: 1024px) */ {
+    .menuBurgerButton {
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+
+    .credentials {
+        position: relative;
+        justify-content: space-evenly;
+    }
+
+    .eye {
+        width: 1.4rem;
+        height: 1.4rem;
+        align-self: center;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .errorIcon {
+        color: palevioletred;
+        width: 1.4rem;
+        height: 1.4rem;
+        position: absolute;
+        right: 0;
+        align-self: center;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .menuBurgerButton {
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+
+    .credentials {
+        flex-direction: column;
+    }
+
+    .eye {
+        width: 1.4rem;
+        height: 1.4rem;
+        align-self: center;
+        margin: 3% 0 1%;
+    }
+
+    .errorIcon {
+        width: 1.4rem;
+        height: 1.4rem;
+        align-self: center;
+        color: palevioletred;
+        margin: 3% 0 1%;
+    }
+}

@@ -1,0 +1,115 @@
+.thumbnail-item {
+  margin-right: 10px;
+  position: relative;
+}
+
+.delete-button {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  background: gray;
+  color: white;
+  border: none;
+  padding: 1px 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .createPropertyContainer {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://d31dn7nfpuwjnm.cloudfront.net/images/valoraciones/0039/0739/fondos-inmobiliarios-que-como-funcionan.png?1595294746");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .createSectionOuter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow-y: auto;
+  }
+  
+  .createSectionInner {
+    background-color: rgba(255, 255, 255, 0.92);
+    width: 70%;
+    height: fit-content;
+    margin: 2vw 0;
+    border-radius: 15px;
+    padding: 2vw 0;
+  }
+  
+  /* .h1 {
+    margin: 3vw 0;
+  } */
+  
+  .middleSection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .middleSectionColumn {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .error-message {
+    color: rgb(238, 19, 19);
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: bold; /* Agregado para hacer el texto en negrita */
+  }
+  
+  .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Asegúrate de que el overlay esté en la parte superior de todo */
+  }
+  
+  .loading-message {
+    font-size: 24px;
+    padding: 20px;
+    background: #fff; /* Fondo blanco */
+    border: 2px solid #333; /* Borde gris */
+    border-radius: 8px;
+  }
+  
+  .loading-image {
+    width: 100px; /* Ajusta el ancho según el tamaño deseado */
+    height: 100px; /* Ajusta la altura según el tamaño deseado */
+    border-radius: 8px;
+  }
+  
+  
+  
+  .thumbnail-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  
+  .thumbnail-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+
+  
+} 
+
+

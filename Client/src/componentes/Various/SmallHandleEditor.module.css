@@ -1,0 +1,30 @@
+/* .SmallHandleEtitor {
+    background-color: bisque;
+} */
+
+.table {
+    border-collapse: separate;
+    border-spacing: 10px 5px;
+}
+
+.cell {
+    text-align:start;
+}
+
+.separator {
+    width: 100%;
+    border: 1px solid black;
+    margin: 5px 0;
+}
+
+.buttonSection {
+    display: flex;
+    justify-content: end;
+    column-gap: 20px;
+    margin: 8px 0 15px;
+}
+
+.button {
+    padding: 4px;
+    border-radius: 10px;
+}

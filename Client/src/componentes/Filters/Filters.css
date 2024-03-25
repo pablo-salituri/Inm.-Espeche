@@ -1,0 +1,84 @@
+.filters-container {
+    display: flex;
+    align-items: center;
+    gap: 3px; /* Espacio entre los elementos */
+  }
+  
+  .button-filtrar{
+    background-color: white;
+    /* color: gray */
+  }
+.button-filtrar:hover{
+  background-color: #62929E;
+}
+#select1 {
+  background-color: rgba(255, 255, 255, 0.76);
+  color: rgba(0, 0, 0, 0.886)
+}
+
+
+#select2 {
+  background-color: rgba(255, 255, 255, 0.76);
+  color: rgba(0, 0, 0, 0.886);
+  /* border: none; */
+}
+
+#select3 {
+  background-color: rgba(255, 255, 255, 0.76);
+  color: rgba(0, 0, 0, 0.886);
+  /* border: none; */
+}
+
+fil:hover {
+  background-color: rgba(255, 255, 255, 0.76);
+
+}
+
+
+@media (min-width: 1025px) {
+  .containerInFilter {
+    margin: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .containerInFilter {
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .tipo {
+   font-size:x-small;
+  }
+}
+
+
+
+/* @media screen and (max-width: 576px) {
+  #select1 option {
+   font-size: x-small;
+  }
+} */
+/* .form-select custom-select {
+  background-color: white;
+}
+  */
+
+  /* .custom-select {
+    background-color: grey;
+    /* box-shadow:#FDFDFF */
+  /* }  */
+
+  /* .custom-select:hover{
+    background-color: #FDFDFF;
+    color: grey;
+  }
+   */
+  /* .custom-select option:hover {
+    background-color: #62929E !important;
+    color: #62929E !important; 
+  }
+   */
+ 

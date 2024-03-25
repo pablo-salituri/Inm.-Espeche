@@ -1,0 +1,37 @@
+/* @media (max-width: 768px) { */
+  .dashContainer {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://d31dn7nfpuwjnm.cloudfront.net/images/valoraciones/0039/0739/fondos-inmobiliarios-que-como-funcionan.png?1595294746");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .dashBody {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+    row-gap: 3%;
+    overflow-y: auto;
+  }
+  
+  .menuBurgerButton {
+    background-color: #62929E;
+    color: rgb(237,233,233);
+    border-color: #344966;
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+  }
+  
+  
+  .crearPropiedad {
+    cursor: pointer;
+  }
+/* } */
+

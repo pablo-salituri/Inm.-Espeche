@@ -1,0 +1,57 @@
+.recoverContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(32, 32, 33, 0.757);
+  margin-bottom: 30px;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid #e5ddddf8; /* Color de la línea inferior */
+  outline: none; /* Quita el contorno al hacer clic */
+  display: block;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: transparent;
+}
+
+.input:focus {
+  border-bottom: 2px solid rgba(32, 32, 33, 0.47);
+  color: rgba(32, 32, 33, 0.757);
+}
+
+.input::placeholder {
+  color: rgba(32, 32, 33, 0.757);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+}
+
+.submit {
+  width: fit-content;
+  border-radius: 3px;
+  padding: 2px;
+  border-radius: 20px;
+  text-align: center;
+  align-self: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: rgba(179, 185, 191, 0.817);
+  border: none; /* Agrega esta línea para quitar el borde */
+  color: rgba(32, 32, 33, 0.757);
+  transition: background-color 0.3s;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+}
+
+
+.submit:hover {
+    background-color: rgb(171, 177, 183); /* Color con mayor opacidad al pasar el cursor */
+}

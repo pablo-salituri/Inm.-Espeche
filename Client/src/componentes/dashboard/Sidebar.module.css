@@ -1,0 +1,133 @@
+/* .sidebar {
+    width: 14rem;
+    padding-top: 60px;
+    padding-left: 5px;
+    background:#3E5C76;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-right: 8px solid  #479ad5;
+    transition: all .5s;
+  } */
+  body, html {
+    height: 100%; /* Establece la altura de todo el documento al 100% del viewport */
+  }
+  
+  .sideBarContainer {
+    position: absolute;
+    width: fit-content;
+    z-index: 2;
+  }
+  
+  .sidebar {
+    /* width: 14rem; */
+    height: 100vh; /* Establece la altura de .sidebar al 100% del viewport */
+    padding-top: 60px;
+    padding-left: 5px;
+    padding-right: 15px;
+    background: #3E5C76;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-right: 8px solid #479ad5;
+    transition: all .5s;
+  }
+  .Links {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    margin-left: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  .LogoutLink {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    /* margin: 5px 0;
+    margin-left: 15px; */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 5px 26px;
+    font-size: 1rem;
+  }
+
+
+  .LogoutLink:hover {
+    background-color:#479ad5;
+    color: #c0dbd9;
+    position: relative;
+    /* margin:10px; */
+    /* height: 15px; */
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .Links:hover {
+    background-color: #479ad5;
+    color: #c0dbd9;
+    position: relative;
+  }
+  
+  .Linkicon {
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .active {
+    background-color: #1b787a;
+    color: #5edad2;
+  }
+
+  .contractIcon {
+    color: white;
+    position: absolute;
+    top: 4%;
+    right: 10%;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .Links {
+      padding: 5px;
+      margin: 3px 0;
+      font-size: 0.8rem;
+    }
+  
+    .Linkicon {
+      margin-right: 5px;
+      font-size: 1.2rem;
+    }
+
+    .LogoutLink {
+      display: flex;
+      align-items: center;
+      color: white;
+      text-decoration: none;
+      /* margin: 5px 0;
+      margin-left: 15px; */
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      padding: 5px 10px;
+      font-size: 0.9rem;
+    }
+  }
+  
+/*   @media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .sidebar {
+      width: 4rem;
+    }
+    .sidebar span{
+      display: none;
+    }
+  } */
+  
+  @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    /* Estilos para Laptos */
+  }
+  

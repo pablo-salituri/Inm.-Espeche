@@ -1,0 +1,12 @@
+.dropDownContainer {
+    background-color: #62929E;
+    color: white;
+    position: fixed;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+}

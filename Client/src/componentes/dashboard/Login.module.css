@@ -1,0 +1,302 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap");
+
+.containerLogin {
+  /* background: linear-gradient(to right, #3E5C76, #ffffff); */
+  background-image: url("https://gpvivienda.com/blog/wp-content/uploads/2023/03/ralph-ravi-kayden-mR1CIDduGLc-unsplash-1-1-1024x680.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-size: cover; /* Cubre todo el espacio disponible */
+  background-position: center; /* Ajusta la posición de la imagen en el centro */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 100%;
+  opacity: 1;
+  /* filter: brightness(80%) esto le aguegue al ultimo */
+}
+
+.containerLogin::before {
+  content: ""; /* Añade un contenido pseudo-elemento */
+  position: absolute; /* Posiciona el pseudo-elemento en relación con su primer padre con posición no estática */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); */
+   /* Fondo blanco con opacidad del 50% */
+   background-color: rgba(255, 255, 255, 0.241);
+  height: 100%;
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos estén uno encima del otro */
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  height: 70vh; /* Usa el 100% de la altura de la ventana */
+  width: 30%;
+  position: relative; /* Asegura que el formulario esté apilado encima del fondo */
+  z-index: 1;
+  border: 2px solid #fff; /* Añade un borde blanco de 2 píxeles */
+  border-radius: 5px;
+  padding: 50px; /* Añade espacio interno para separar el contenido del borde */
+  /* padding-top: 50px; */
+  /* padding-bottom: 50px; */
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  background-color: rgba(255, 255, 255, 0.92);
+  filter: brightness(90%);
+  opacity: 0.9;
+  filter: brightness(90%) contrast(150%); 
+
+  /* box-sizing: border-box; */
+}
+
+
+.tab:hover {
+  cursor: pointer;
+}
+
+.h1 {
+    font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(32, 32, 33, 0.757);
+  /* margin-bottom: 30px; */
+}
+
+.loginName {
+  border: none;
+  border-bottom: 1px solid #e5ddddf8; /* Color de la línea inferior */
+  outline: none; /* Quita el contorno al hacer clic */
+  display: block;
+  margin-bottom: 50px;
+  /* margin-bottom: 100px; */
+  /* margin-left: 50px; */
+  text-align: center;
+  /* background: linear-gradient(to right, #3E5C76, #ffffff); */
+  background-color: transparent;
+}
+
+.passwordSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.eye:hover {
+  cursor: pointer;
+}
+
+.loginPass {
+  border: none;
+  border-bottom: 1px solid #e5ddddf8; /* Color de la línea inferior */
+  outline: none; /* Quita el contorno al hacer clic */
+  display: block;
+  /* margin-bottom: 100px; */
+  /* margin-left: 50px; */
+  text-align: center;
+  /* background: linear-gradient(to right, #3E5C76, #ffffff); */
+  background-color: transparent;
+}
+.loginName:focus {
+  border-bottom: 2px solid rgba(32, 32, 33, 0.47);
+  color: rgba(32, 32, 33, 0.757);
+}
+
+.loginPass:focus {
+  border-bottom: 2px solid rgba(32, 32, 33, 0.501);
+  color: rgba(32, 32, 33, 0.757);
+}
+
+.loginName::placeholder {
+  color: rgba(32, 32, 33, 0.757);
+  /* font-size: medium; */
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+
+}
+
+.loginPass::placeholder {
+  color: rgba(32, 32, 33, 0.757);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+}
+
+.submit {
+  /* margin-left: 50px; */
+  border-radius: 3px;
+  padding: 2px;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: rgba(179, 185, 191, 0.817);
+  border: none; /* Agrega esta línea para quitar el borde */
+  /* box-shadow: none;  */
+  color: rgba(32, 32, 33, 0.757);
+  transition: background-color 0.3s;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+}
+
+
+.submit:hover {
+    background-color: rgb(171, 177, 183); /* Color con mayor opacidad al pasar el cursor */
+    cursor: pointer;
+}
+
+
+@media (min-width: 1025px) {
+  .containerLogin {
+    filter: brightness(100%); /* Ajusta el brillo según tus preferencias */
+  }
+  
+  .tabs {
+    width: 100%;
+    height: 12%;
+    position: absolute;
+    display: flex;
+    top: 0;
+    justify-content: space-around;
+  }
+
+  .tab {
+    width: 49%;
+    height: 100%;
+    background-color: rgb(220, 220, 220);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .containerLogin::before {
+    background-color: rgba(255, 255, 255, 0.5); /* Ajusta la opacidad según tus preferencias */
+  }
+
+  .formLogin {
+    width: 70%;
+    max-width: 400px;
+    height: 90%;
+    padding: 20px; /* Reduce el espacio interno en pantallas pequeñas */
+  }
+
+  /* .h1 {
+    margin-bottom: 45px;
+  } */
+
+  .eye {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .containerLogin {
+    filter: brightness(100%); /* Ajusta el brillo según tus preferencias */
+  }
+  
+  .tabs {
+    width: 100%;
+    height: 12%;
+    position: absolute;
+    display: flex;
+    top: 0;
+    justify-content: space-around;
+  }
+
+  .tab {
+    width: 49%;
+    height: 100%;
+    background-color: rgb(220, 220, 220);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .containerLogin::before {
+    background-color: rgba(255, 255, 255, 0.5); /* Ajusta la opacidad según tus preferencias */
+  }
+
+  .formLogin {
+    width: 70%;
+    max-width: 400px;
+    height: 90%;
+    padding: 20px; /* Reduce el espacio interno en pantallas pequeñas */
+  }
+
+  /* .h1 {
+    margin-bottom: 45px;
+  } */
+
+  .eye {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .containerLogin {
+    filter: brightness(100%); /* Ajusta el brillo según tus preferencias */
+  }
+  
+  .tabs {
+    width: 100%;
+    height: 12%;
+    position: absolute;
+    display: flex;
+    top: 0;
+    justify-content: space-around;
+    font-size: 0.8rem;
+  }
+
+  .tab {
+    width: 49%;
+    height: 100%;
+    background-color: rgb(220, 220, 220);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .containerLogin::before {
+    background-color: rgba(255, 255, 255, 0.5); /* Ajusta la opacidad según tus preferencias */
+  }
+
+  .formLogin {
+    width: 70%;
+    max-width: 400px;
+    height: 80%;
+    padding: 20px; /* Reduce el espacio interno en pantallas pequeñas */
+  }
+
+  /* .h1 {
+    margin-bottom: 45px;
+  } */
+
+  .eye {
+    width: 70%;
+    height: 70%;
+  }
+}

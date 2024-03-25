@@ -1,0 +1,103 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+.superiorContainer {
+  position: absolute;
+  top: 0%;
+  height: 21%;
+  width: 100%;
+}
+
+.generalContainer {
+  position: absolute;
+  /* top: 21%;
+  height: 60%; */
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: #AEC3B0;
+  font-family: 'Work Sans';
+}
+
+/* body {
+  background-color: #AEC3B0;
+} */
+.App {
+  text-align: center;
+  padding: 15px;
+  display: flex;
+
+  /* background-color: #cfcfcf; */
+  /* #FFFFFF; */
+}
+
+
+@media (min-width: 1025px) {
+  .superiorContainer {
+    position: absolute;
+    top: 0%;
+    height: 20%;
+    width: 100%;
+  }
+
+  .generalContainer {
+    position: absolute;
+    /* top: 20%; */
+    height: 70%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .superiorContainer {
+    position: absolute;
+    top: 0%;
+    height: 20%;
+    width: 100%;
+  }
+
+  .generalContainer {
+    position: absolute;
+    /* top: 20%; */
+    height: 70%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .superiorContainer {
+    position: absolute;
+    top: 0%;
+    height: 20%;
+    width: 100%;
+  }
+
+  .generalContainer {
+    position: absolute;
+    /* top: 20%; */
+    height: 70%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+
+

@@ -1,0 +1,28 @@
+.containerPublicidad {
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+@media (min-width: 1025px) {
+  .carouselItem {
+    height: 36vh;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .carouselItem {
+    height: 38vh;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+}
