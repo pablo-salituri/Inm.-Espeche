@@ -113,10 +113,7 @@ const ContactForm = ({ propertyTitle }) => {
     <form
       onSubmit={onSubmit}
       className="form"
-      // Coti
-      action="https://formspree.io/f/mnqkwgbz"
-      // Pablo
-      // action="https://formspree.io/f/xknldwwj"
+      action="https://formspree.io/f/xknldwwj"
       method="POST"
     >
       <h5 className="titulo">CONTACTANOS</h5>

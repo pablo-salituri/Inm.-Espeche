@@ -12,9 +12,8 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./CreateForm.css";
 
 const CreateForm = () => {
-  //Credenciales Cloudinary de Pablo. Cambiar
-  const cloudName = "dreujwkes";
-  const presetName = "upload_pablo";
+  const cloudName = process.env.REACT_APP_CLOUDNAME;
+  const presetName = process.env.REACT_APP_PRESETNAME;
 
   // const { id } = useParams();
   const navigate = useNavigate();
@@ -89,7 +88,7 @@ const CreateForm = () => {
         propertyData.image.map(async ({ file }, index) => {
           const formData = new FormData();
           formData.append("file", file);
-          formData.append("upload_preset", presetName || "constanza"); // Reemplaza con tu upload preset de Cloudinary
+          formData.append("upload_preset", presetName); // Reemplaza con tu upload preset de Cloudinary
 
           const response = await fetch(
             `https://api.cloudinary.com/v1_1/${

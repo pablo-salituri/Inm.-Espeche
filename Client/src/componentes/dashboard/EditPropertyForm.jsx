@@ -7,9 +7,8 @@ import ValidateForm from "./ValidateForm";
 import Swal from "sweetalert2";
 
 const EditPropertyForm = ({ onCancel }) => {
-  //Credenciales Cloudinary de Pablo. Cambiar
-  const cloudName = "dreujwkes";
-  const presetName = "upload_pablo";
+  const cloudName = process.env.REACT_APP_CLOUDNAME;
+  const presetName = process.env.REACT_APP_PRESETNAME;
 
   const { id } = useParams();
   // console.log("ID de la propiedad:", id);
@@ -295,7 +294,7 @@ const EditPropertyForm = ({ onCancel }) => {
           imagesToUpload.map(async ({ file }, index) => {
             const formData = new FormData();
             formData.append("file", file);
-            formData.append("upload_preset", presetName || "constanza"); // Reemplaza con tu upload preset de Cloudinary
+            formData.append("upload_preset", presetName); // Reemplaza con tu upload preset de Cloudinary
 
             const response = await fetch(
               `https://api.cloudinary.com/v1_1/${
