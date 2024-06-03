@@ -11,6 +11,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./CreateForm.css";
 
+const backEndUrl = process.env.REACT_APP_BACKEND_URL;
+
 const CreateForm = () => {
   const cloudName = process.env.REACT_APP_CLOUDNAME;
   const presetName = process.env.REACT_APP_PRESETNAME;
@@ -113,7 +115,7 @@ const CreateForm = () => {
       console.log(uploadedImages[0]);
 
       // Después de cargar las imágenes, enviar los datos al servidor para crear una nueva propiedad
-      const response = await axios.post("http://localhost:3001/properties", {
+      const response = await axios.post(`${backEndUrl}/properties`, {
         ...propertyData,
         image: uploadedImages, // Pasar las URL de las imágenes en lugar de los objetos de archivo
         coverImage: uploadedImages[0],
@@ -255,7 +257,7 @@ const CreateForm = () => {
     const { value } = event.target;
 
     try {
-      const response = await fetch(`http://localhost:3001/types/${value}`); // Reemplaza con tu ruta y parámetros
+      const response = await fetch(`${backEndUrl}/types/${value}`); // Reemplaza con tu ruta y parámetros
       const data = await response.json();
 
       console.log("Original propertyData:", propertyData); // Antes de la actualización

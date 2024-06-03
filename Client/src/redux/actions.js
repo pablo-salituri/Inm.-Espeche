@@ -16,10 +16,12 @@ import { GET_ALL_PROPERTY,
  } from "./actions-types";
 import axios from "axios";
 
+const backEndUrl = process.env.REACT_APP_BACKEND_URL;
+
 
 export const getAllProperty = () => {
     return async function (dispatch) { //le aviso a mi fn que le hago algo async
-        var json = await axios.get("http://localhost:3001/properties/")
+        var json = await axios.get(`${backEndUrl}/properties/`)
         return dispatch({
             type: GET_ALL_PROPERTY,
             payload: json.data
@@ -36,7 +38,7 @@ export const filterProperties = (filteredProperties) => {
   
   export const getType = () => {
     return async function (dispatch) {
-        var response = await axios.get("http://localhost:3001/types/");
+        var response = await axios.get(`${backEndUrl}/types/`);
         return dispatch({
           type: GET_TYPE,
           payload: response.data,
@@ -53,7 +55,7 @@ export const filterProperties = (filteredProperties) => {
 
 export const propertyDetail = (id) => {
     return async function (dispatch){
-    var response = await axios.get(`http://localhost:3001/properties/${id}`)
+    var response = await axios.get(`${backEndUrl}/properties/${id}`)
     const propertyData= response.data
 
 
@@ -72,7 +74,7 @@ export const cleanPropertyDetail = () => {
 
 export const get_operation = () => {
     return async function (dispatch) {
-        var response = await axios.get("http://localhost:3001/operations/");
+        var response = await axios.get(`${backEndUrl}/operations/`);
         return dispatch({
             type: GET_OPERATION,
             payload: response.data
@@ -116,11 +118,11 @@ export const saveScrollPosition = (position) => ({
 
 export const togglePropertyActive = (id, active) => {
   return async function (dispatch) {
-    await axios.put(`http://localhost:3001/properties/active/${id}`, {
+    await axios.put(`${backEndUrl}/properties/active/${id}`, {
       active: active,
     });
 
-    const response = await axios.get("http://localhost:3001/properties/");
+    const response = await axios.get(`${backEndUrl}/properties/`);
     const updatedProperties = response.data;
 
     return dispatch({

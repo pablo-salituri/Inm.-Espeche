@@ -7,11 +7,13 @@ const { DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_NAME, DB_DEPLOY } = process.e
 //-------------------------------- CONFIGURACION PARA TRABAJAR LOCALMENTE-----------------------------------
 
 const sequelize = new Sequelize(
-  /* `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/pokemon`, */
+  /* `postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`, */
   DB_DEPLOY,
   {
     logging: false, // set to console.log to see the raw SQL queries
     native: false, // lets Sequelize know we can use pg-native for ~30% more speed
+    
+    //Comentar en desasrrollo
     dialectOptions: {
       ssl: {
           require: true,
