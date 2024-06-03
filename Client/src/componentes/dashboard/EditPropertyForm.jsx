@@ -6,6 +6,8 @@ import Miniatures from "../Miniatures/Miniatures";
 import ValidateForm from "./ValidateForm";
 import Swal from "sweetalert2";
 
+const backEndUrl = process.env.REACT_APP_BACKEND_URL;
+
 const EditPropertyForm = ({ onCancel }) => {
   const cloudName = process.env.REACT_APP_CLOUDNAME;
   const presetName = process.env.REACT_APP_PRESETNAME;
@@ -54,9 +56,7 @@ const EditPropertyForm = ({ onCancel }) => {
     // Lógica para cargar los datos de la propiedad desde la API al montar el componente
     const fetchPropertyData = async () => {
       try {
-        const response = await axios.get(
-          `http://localhost:3001/properties/${id}`
-        );
+        const response = await axios.get(`${backEndUrl}/properties/${id}`);
 
         setPropertyData(response.data);
 
@@ -115,7 +115,7 @@ const EditPropertyForm = ({ onCancel }) => {
     if (name === "type") {
       // Aquí deberías realizar una llamada a la API o base de datos para obtener el nuevo propertyTypeId
       try {
-        const response = await fetch(`http://localhost:3001/types/${value}`); // Reemplaza con tu ruta y parámetros
+        const response = await fetch(`${backEndUrl}/types/${value}`); // Reemplaza con tu ruta y parámetros
         const data = await response.json();
 
         if (data.propertyTypeId) {
@@ -163,7 +163,7 @@ const EditPropertyForm = ({ onCancel }) => {
     const { value } = event.target;
 
     try {
-      const response = await fetch(`http://localhost:3001/types/${value}`);
+      const response = await fetch(`${backEndUrl}/types/${value}`);
       const data = await response.json();
 
       setPropertyData((prevData) => ({
@@ -224,7 +224,7 @@ const EditPropertyForm = ({ onCancel }) => {
 
       // Enviar los datos actualizados al servidor
       const response = await axios.put(
-        `http://localhost:3001/properties/${id}`,
+        `${backEndUrl}/properties/${id}`,
         updatedPropertyData
       );
       console.log("Propiedad actualizada:", response.data);
@@ -348,7 +348,7 @@ const EditPropertyForm = ({ onCancel }) => {
       for (const imageUrl of imagesToDelete) {
         try {
           const response = await axios.delete(
-            "http://localhost:3001/properties/deleteImage/",
+            `${backEndUrl}/properties/deleteImage/`,
             { data: { id, url: imageUrl } }
           );
           console.log(response.status);
